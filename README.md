@@ -1,4 +1,4 @@
 RICECAKE
 ========
 
-Android App
+This is an Android application what make cards.
