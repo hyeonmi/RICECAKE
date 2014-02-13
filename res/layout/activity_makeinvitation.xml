@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFF9999" >
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="5dp"
+        android:src="@drawable/title_logo" />
+
+    <ImageButton
+        android:id="@+id/btnShare"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="5dp"
+        android:background="@null"
+        android:src="@drawable/ic_share" />
+
+    <ImageButton
+        android:id="@+id/btnSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/btnShare"
+        android:background="@null"
+        android:src="@drawable/ic_save" />
+
+    <ImageButton
+        android:id="@+id/btnAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/btnSave"
+        android:background="@null"
+        android:src="@drawable/ic_add" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/btnShare"
+        android:background="@drawable/bg_wood" />
+
+    <org.androidtown.iview.graphic.GraphicView
+        android:id="@+id/mainlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/btnShare"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="8dp" />
+
+    <ImageButton
+        android:id="@+id/btnText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/btnAdd"
+        android:layout_below="@id/btnAdd"
+        android:layout_marginTop="4dp"
+        android:background="@null"
+        android:src="@drawable/ic_sub_text"
+        android:visibility="gone" />
+
+    <ImageButton
+        android:id="@+id/btnPhoto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnAdd"
+        android:layout_marginTop="4dp"
+        android:layout_toRightOf="@id/btnText"
+        android:background="@null"
+        android:src="@drawable/ic_sub_photo"
+        android:visibility="gone" />
+
+    <ImageButton
+        android:id="@+id/btnMap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnAdd"
+        android:layout_marginTop="4dp"
+        android:layout_toRightOf="@id/btnPhoto"
+        android:adjustViewBounds="true"
+        android:background="@null"
+        android:src="@drawable/ic_sub_map"
+        android:visibility="gone" />
+
+    <!-- 하단에 줄 // -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical" >
+
+        <ImageButton
+            android:id="@+id/btnDelete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginRight="5dp"
+            android:background="@null"
+            android:onClick="onClickText"
+            android:src="@drawable/ic_sub_trash_1"
+            android:visibility="gone" />
+
+        <!-- sublayout // -->
+
+        <FrameLayout
+            android:id="@+id/sublayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ccb7b7b7" >
+
+            <com.pilotfish22.ricecake.ColorPicker
+                android:id="@+id/colorpicker"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:visibility="gone" />
+
+            <!-- font style // -->
+
+            <LinearLayout
+                android:id="@+id/fonts"
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:layout_gravity="bottom"
+                android:orientation="horizontal"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/font1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_margin="5dp"
+                    android:clickable="true"
+                    android:onClick="onClickFont"
+                    android:text="@string/font_text"
+                    android:textColor="#FFFFFFFF"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/font2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_margin="5dp"
+                    android:clickable="true"
+                    android:onClick="onClickFont"
+                    android:text="@string/font_text"
+                    android:textColor="#FFFFFFFF"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/font3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_margin="5dp"
+                    android:clickable="true"
+                    android:onClick="onClickFont"
+                    android:text="@string/font_text"
+                    android:textColor="#FFFFFFFF"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/font4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_margin="5dp"
+                    android:clickable="true"
+                    android:onClick="onClickFont"
+                    android:text="@string/font_text"
+                    android:textColor="#FFFFFFFF"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/font5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_margin="5dp"
+                    android:clickable="true"
+                    android:onClick="onClickFont"
+                    android:text="@string/font_text"
+                    android:textColor="#FFFFFFFF"
+                    android:textSize="20sp" />
+            </LinearLayout>
+            <!-- //  font style -->
+
+            <SeekBar
+                android:id="@+id/seekbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:max="50"
+                android:padding="3dp"
+                android:visibility="gone" />
+
+            <!-- 글자 입력 // -->
+
+            <RelativeLayout
+                android:id="@+id/edittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone" >
+
+                <EditText
+                    android:id="@+id/text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/text"
+                    android:hint="@string/hint_text"
+                    android:maxLength="20"
+                    android:singleLine="true" />
+
+                <Button
+                    android:id="@+id/btnConfirm"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/btn"
+                    android:paddingLeft="3dp"
+                    android:paddingRight="3dp"
+                    android:text="@string/save" />
+            </RelativeLayout>
+            <!-- // 글자 입력 -->
+        </FrameLayout>
+        <!-- sublayout // -->
+
+
+        <!-- 텍스트 꾸미기 버튼 // -->
+
+        <LinearLayout
+            android:id="@+id/maketext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ccb7b7b7"
+            android:orientation="horizontal"
+            android:visibility="gone" >
+
+            <ImageButton
+                android:id="@+id/btnEdit"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:onClick="onClickText"
+                android:src="@drawable/ic_edit" />
+
+            <ImageButton
+                android:id="@+id/btnColor"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:onClick="onClickText"
+                android:src="@drawable/ic_textcolor" />
+
+            <ImageButton
+                android:id="@+id/btnStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:onClick="onClickText"
+                android:src="@drawable/ic_textstyle" />
+
+            <ImageButton
+                android:id="@+id/btnSize"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:onClick="onClickText"
+                android:src="@drawable/ic_textsize" />
+
+            <ImageButton
+                android:id="@+id/btnClose"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:onClick="onClickText"
+                android:src="@drawable/ic_close" />
+        </LinearLayout>
+        <!-- // 텍스트 꾸미기 버튼 -->
+        <!-- //  하단 -->
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">RiceCake</string>
+    <string name="text_add_contents">Up to 15 characters can be entered</string>
+    <string name="font_text">Aa</string>
+    <string name="hint_text">Up to 15 characters can be entered</string>
+    <string name="toast_msg">Does not save your work. You\'re going to this page?</string>
+    <string name="toast_msg_quit">\'Back \' If you press the button again will exit</string>
+    <string name="toast_msg_internet">Internet is not turned on. Please turn on Internet</string>
+    <string name="toast_msg_saved">Card has been saved. \n To modify the card \'Back \' button is pressed</string>
+    <string name="toast_msg_unsaved">Card storage failed</string>
+    <string name="hint_address">Please enter the address</string>
+    <string name="yes">OK</string>
+    <string name="no">Cancel</string>
+    <string name="title_share">Share</string>
+    <string name="save">Save</string>
+    <string name="search">Search</string>
+    <string name="close">Close</string>
+    <string name="title_map">Map Search</string>
+    <string name="toast_msg_address">There is no list found</string>
+    <string name="toast_msg_system">There was a problem with your system. \n Please try again</string>
+    <string name="loading">Loading</string>
+    <string name="deleted">Has been deleted.</string>
+    <string name="select_gallery">Select</string>
+    <string name="toast_msg_sdcard">Please insert SDCard first and try again.</string>
+</resources>

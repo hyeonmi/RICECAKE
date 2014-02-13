@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">RiceCake</string>
+    <string name="text_add_contents">최대 15자까지 입력가능</string>
+    <string name="font_text">Aa가</string>
+    <string name="hint_text">최대 15자까지 입력가능</string>
+    <string name ="toast_msg">작업한 내용이 저장되지 않습니다. \n 이 페이지를 나가시겠습니까?</string>
+    <string name="toast_msg_quit">\'뒤로\'버튼을 한번 더 누르시면 종료됩니다.</string>
+    <string name="toast_msg_internet">인터넷이 켜져 있지 않습니다. 인터넷을 켜주세요.</string>
+    <string name="toast_msg_saved">카드가 저장되었습니다. \n 카드를 수정하시려면 \'뒤로\'버튼을 누르면 됩니다.</string>
+    <string name="toast_msg_unsaved">카드 저장이 실패했습니다</string>
+    <string name="hint_address">주소를 입력해주세요.</string>
+    <string name="yes">예</string>
+    <string name="no">아니오</string>
+    <string name="title_share">공유</string>
+    <string name="save">저장</string>
+    <string name="search">검색</string>
+    <string name="close">닫기</string>
+    <string name="title_map">지도 검색</string>
+    <string name="toast_msg_address">검색된 목록이 없습니다. 동까지 입력해주세요.</string>
+    <string name="toast_msg_system">시스템에 문제가 발생하였습니다.\n 메모리 정리후 다시 시도해주세요</string>
+    <string name="loading">로딩중</string>
+    <string name="deleted">삭제되었습니다.</string>
+    <string name="select_gallery">선택</string>
+    <string name="toast_msg_sdcard">SDCard를 넣어주세요.</string>    
+</resources>

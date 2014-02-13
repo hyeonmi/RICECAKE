@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ccb7b7b7" >
+
+    <EditText
+        android:id="@+id/editAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/text"
+        android:hint="@string/hint_address"
+        android:singleLine="true" />
+
+    <Button
+        android:id="@+id/btnSearch"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/btn"
+        android:paddingLeft="3dp"
+        android:paddingRight="3dp"
+        android:text="@string/search" />
+
+    <ListView
+        android:id="@+id/listContents"
+        android:layout_width="match_parent"
+        android:layout_height="260dp"
+        android:layout_below="@id/editAddress"
+        android:divider="#FFFF9999"
+        android:padding="3dp"
+        android:visibility="gone" />
+
+    <com.google.android.maps.MapView
+        android:id="@+id/mapview"
+        android:layout_width="match_parent"
+        android:layout_height="260dp"
+        android:layout_below="@id/editAddress"
+        android:apiKey="0jgSvu_vmr9-AWu4XrnfQzbKEwwTbTxSKqp9eOw"
+        android:clickable="true"
+        android:padding="3dp"
+        android:visibility="invisible" />
+
+    <LinearLayout
+        android:id="@+id/layoutButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mapview"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingBottom="3dp" >
+
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:background="@drawable/btn"
+            android:text="@string/save"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/btnCancle"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:background="@drawable/btn"
+            android:text="@string/close" />
+    </LinearLayout>
+
+</RelativeLayout>
